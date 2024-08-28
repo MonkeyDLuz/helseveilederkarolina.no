@@ -1,0 +1,100 @@
+/* styles.css */
+:root {
+    --color-primary: #22577A;
+    --color-secondary: #38A3A5;
+    --color-accent: #57CC99;
+    --color-light: #80ED99;
+    --color-lightest: #C7F9CC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: var(--color-lightest);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hero h2 {
+    color: var(--color-primary);
+}
+
+button {
+    background-color: var(--color-accent);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3 {
+    color: var(--color-secondary);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
